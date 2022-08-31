@@ -16,9 +16,6 @@
     margin-left: 5rem;
     height: 5rem;
 
-    // display: flex;
-    // align-items: center;
-
     a {
       display: inline-block;
       position: relative;
@@ -53,5 +50,9 @@
         background: var(--yellow-500);
       }
     }
+  }
+
+  button {
+    margin-left: auto;
   }
 }
