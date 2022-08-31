@@ -8,6 +8,7 @@
   "plugins": ["import-helpers", "@typescript-eslint", "prettier"],
   "root": true,
   "rules": {
+    "@next/next/no-img-element": "off",
     "prettier/prettier": [
       "error",
       {
