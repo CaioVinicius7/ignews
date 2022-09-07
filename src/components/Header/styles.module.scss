@@ -55,4 +55,10 @@
   button {
     margin-left: auto;
   }
+
+  @media (max-width: 720px) {
+    nav {
+      display: none;
+    }
+  }
 }
