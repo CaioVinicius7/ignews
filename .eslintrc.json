@@ -9,6 +9,12 @@
   "root": true,
   "rules": {
     "@next/next/no-img-element": "off",
+    "import/no-anonymous-default-export": [
+      "error",
+      {
+        "allowArrowFunction": true
+      }
+    ],
     "prettier/prettier": [
       "error",
       {
