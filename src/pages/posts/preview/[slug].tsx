@@ -31,7 +31,7 @@ export default function PostPreview({ post }: PostPreviewProps) {
   return (
     <>
       <Head>
-        <title> {post.title} | Ignews </title>
+        <title>{post.title} | Ignews </title>
       </Head>
 
       <main className={styles.container}>
@@ -97,6 +97,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   return {
     props: {
       post
-    }
+    },
+    revalidate: 60 * 30 // 30 minutes
   };
 };
