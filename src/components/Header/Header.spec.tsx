@@ -1,4 +1,4 @@
-import { render } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 
 import { Header } from ".";
 
@@ -22,9 +22,9 @@ jest.mock("next-auth/react", () => {
 
 describe("Header component", () => {
   it("Renders correctly", () => {
-    const { getByText } = render(<Header />);
+    render(<Header />);
 
-    expect(getByText("home")).toBeInTheDocument();
-    expect(getByText("news")).toBeInTheDocument();
+    expect(screen.getByText("home")).toBeInTheDocument();
+    expect(screen.getByText("news")).toBeInTheDocument();
   });
 });
